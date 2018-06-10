@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Style</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body>
+        <div id="page">
+            <header>
+                <div id="inner">
+                    <div id="logo"></div>
+                    <h1 id="welcome">Welcome!</h1>
+                </div>
+                    <nav>
+                        <div id="button1"><button id="nav_button">Menu</button></div>
+                        <script>
+                            $("#nav_button").click(function() {
+                                $(".nav_list").show();
+                                $("#nav_button").hide();
+                            });
+                        </script>
+                        <ul id="navigation">
+                            <li class="nav_list">Page 1</li>
+                            <li class="nav_list">Page 2</li>
+                            <li class="nav_list">Page 3</li>
+                            <li class="nav_list">Page 4</li>
+                            <li class="nav_list">Page 5</li>
+                            <li class="nav_list">Page 6</li>
+                        </ul>
+                    </nav>
+            </header>
+            <div id="main_content">
+                <section>
+                    <p>
+                        This is a section.
+                    </p>
+                </section>
+                <main>
+                    <p>
+                        This is where all the main content will go.
+                    </p>
+                </main>
+                <aside>
+                    <p>
+                        This is an aside.
+                    </p>
+                </aside>
+            </div>
+            <footer>
+                <p>
+                    Copyright belongs to me.
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

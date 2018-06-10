@@ -1,0 +1,134 @@
+/* style.css */
+
+/* General */
+
+
+body {
+    background-color: #09112d;
+}
+#page {
+    margin: 0, auto;
+    background-color: #87b2f3;
+    padding-top: 15px;
+}
+
+
+/* Header */
+
+#logo {
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+}
+#navigation {
+    list-style-type: none;
+    padding: 0;
+}
+nav {
+    margin: 10px;
+    border-radius: 10px;
+}
+.nav_list {
+    border-radius: 10px;
+    margin: 5px 2.5px;
+    padding: 3px;
+    display: none;
+    box-shadow: 5px 5px 2.5px gray;
+    background: linear-gradient(to bottom right, rgba(13, 24, 81, 1), rgba(255, 255, 255, 0.2));
+}
+#nav_button {
+    background-color: #87b2f3;
+    height: 100px;
+    width: 100px;
+}
+#button1 {
+    display: flex;
+    justify-content: center;
+}
+#welcome {
+    text-align: center;
+}
+
+
+/* Main Content */
+
+
+#main_content {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    order: -1;
+}
+main, section, aside {
+    border: black solid thin;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+/* Footer */
+
+
+footer {
+    text-align: center;
+}
+
+/* Media Queries */
+
+
+@media screen and (min-width: 500px) {
+    #nav_button {
+        display: none;
+    }
+    .nav_list {
+        display: block;
+    }
+    #main_content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    section {
+        flex-basis: 45%;
+        margin-right: 0;
+    }
+    aside {
+        flex-basis: 45%;
+        margin-left: 0;
+    }
+    main {
+        flex-basis: 92%;
+    }
+    #inner {
+        display: flex;
+    }
+    #logo {
+        margin-left: 15px;
+    }
+    #welcome {
+        margin-left: 0;
+        flex-basis: 75%;
+    }
+}
+@media screen and (min-width: 900px) {
+    #main_content {
+        flex-wrap: nowrap;
+    }
+    section {
+        order: -2;
+        flex-basis: 25%;
+    }
+    aside {
+        flex-basis: 25%;
+    }
+    main {
+        flex-basis: 50%;
+    }
+    nav > ul {
+        justify-content: space-around;
+    }
+}
